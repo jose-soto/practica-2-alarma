@@ -11,7 +11,7 @@ void setup() {
 
 }
 void loop() {
-  //LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF);//entrar al modo sleep
+  LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF);//entrar al modo sleep
   //si el iman se acerca al reed switch
   if(digitalRead(contacto)==LOW){
       digitalWrite(led, LOW);//enciende el led
